@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+
+  background-repeat: no-repeat;
+}
+
+.logo {
+  height: 50px;
+  margin: 50px 0 0 120px;
+}
+
+.center {
+  display: flex;
+}
+
+.mock-up {
+  margin: 70px 0 0 120px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 190px;
+  margin-top: 120px;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 460px;
+}
+
+button {
+  height: 50px;
+  width: 180px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 1px 1px 4px 1px black;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: hsl(300, 69%, 71%);
+}
+
+.media {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 150px;
+}
+
+i {
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .center {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mock-up {
+    margin: 20px 0;
+    width: 400px;
+  }
+
+  .desc {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  button {
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  .media {
+    justify-content: center;
+    padding: 20px 0;
+  }
+}
